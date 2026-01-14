@@ -40,5 +40,6 @@ def rate_password(password):
             password_score += 2
     return password_score
 
-result = rate_password(password)
-print('Рейтинг пароля:', result)
+if __name__ == '__main__':
+    result = rate_password(password)
+    print('Рейтинг пароля:', result)
