@@ -1,6 +1,3 @@
-password = input('Enter password: ')
-
-
 def is_long(password):
 	is_long = len(password)
 	return is_long > 12
@@ -40,6 +37,12 @@ def rate_password(password):
             password_score += 2
     return password_score
 
-if __name__ == '__main__':
+
+def main():
+    password = input('Enter password: ')
     result = rate_password(password)
     print('Рейтинг пароля:', result)
+
+
+if __name__ == '__main__':
+    main()  
